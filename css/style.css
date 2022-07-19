@@ -27,9 +27,9 @@
 	1. General
    ========== */
 
-@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700");
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 a {
@@ -42,13 +42,12 @@ p {
 }
 
 .font-primary {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .nav-icon li a {
   margin: 0 12px !important;
 }
-
 
 /* ==========
 	2. Navbar
@@ -65,9 +64,9 @@ p {
   display: block;
   width: 0;
   height: 2px;
-  background: #ff8700;
-  -webkit-transition: width .3s;
-  transition: width .3s;
+  background: #d29501;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 .navbar-custom {
@@ -101,7 +100,7 @@ p {
 }
 
 .navbar-custom .navbar-toggles {
-  padding: .25rem .75rem;
+  padding: 0.25rem 0.75rem;
   font-size: 18px;
   background: 0 0;
   border: 1px solid transparent;
@@ -126,15 +125,15 @@ p {
 .navbar-custom .navbar-nav li a:hover:after,
 .navbar-custom .navbar-nav li a:active:after {
   width: 100%;
-  -webkit-transition: width .3s;
-  transition: width .3s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 .nav .open > a,
 .nav .open > a:focus,
 .nav .open > a:hover {
   background-color: transparent;
-  border-color: #005bea;
+  border-color: #0047ab;
 }
 
 .menu-toggle {
@@ -150,12 +149,12 @@ p {
   margin-top: 0px;
   background-color: #000000;
   -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
   color: #000000 !important;
 }
 
 .nav-sticky.navbar-custom .navbar-toggles {
-  padding: .25rem .75rem;
+  padding: 0.25rem 0.75rem;
   border: 1px solid transparent;
   outline: 0;
 }
@@ -178,8 +177,8 @@ p {
 .nav-sticky.navbar-custom .navbar-nav li a:hover:after,
 .nav-sticky.navbar-custom .navbar-nav li a:active:after {
   width: 100%;
-  -webkit-transition: width .3s;
-  transition: width .3s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 .navbar-collapse .navbar-nav .nav-item {
@@ -213,12 +212,12 @@ p {
   margin-top: 0px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
   color: #212529 !important;
 }
 
 .navbar-light .nav-sticky.navbar-custom .navbar-toggles {
-  padding: .25rem .75rem;
+  padding: 0.25rem 0.75rem;
   border: 1px solid transparent;
   outline: 0;
 }
@@ -237,8 +236,8 @@ p {
 .navbar-light.nav-sticky.navbar-custom .navbar-nav li a:hover:after,
 .navbar-light.nav-sticky.navbar-custom .navbar-nav li a:active:after {
   width: 100%;
-  -webkit-transition: width .3s;
-  transition: width .3s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 .navbar-light .navbar-toggler {
@@ -251,7 +250,7 @@ p {
     margin-top: 0px;
     background-color: #000000 !important;
     -webkit-box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
     color: #ffffff !important;
   }
   .navbar-custom .navbar-nav {
@@ -291,26 +290,25 @@ p {
   }
 }
 
-
 /* ==========
 	3. Helper
    ========== */
 .text-custom {
-  color: #ff8700 !important;
+  color: #d29501 !important;
 }
 
 .text-primary {
-  color: #005bea !important;
+  color: #0047ab !important;
 }
 
 .text-gradient {
-  background: #ff8700;
+  background: #d29501;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .bg-custom {
-  background-color: #ff8700;
+  background-color: #d29501;
 }
 
 .btn {
@@ -335,7 +333,7 @@ p {
 }
 
 .btn-custom {
-  background: #ff8700;
+  background: #d29501;
   color: #ffffff;
   border-color: transparent;
 }
@@ -353,15 +351,15 @@ p {
   text-decoration: none;
   color: #ffffff;
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
   text-decoration: none;
   -webkit-box-shadow: 0 3px 20px -8px #000;
-          box-shadow: 0 3px 20px -8px #000;
+  box-shadow: 0 3px 20px -8px #000;
 }
 
 .btn-outline {
-  color: #005bea;
-  border-color: #005bea;
+  color: #0047ab;
+  border-color: #0047ab;
 }
 
 .btn-outline:hover,
@@ -376,15 +374,15 @@ p {
   outline: none;
   text-decoration: none;
   color: #ffffff;
-  background: #005bea;
+  background: #0047ab;
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
   -webkit-box-shadow: 0 3px 20px -8px #000;
-          box-shadow: 0 3px 20px -8px #000;
+  box-shadow: 0 3px 20px -8px #000;
 }
 
 .btn-custom-primary {
-  background: #005bea;
+  background: #0047ab;
   color: #ffffff;
   border-color: transparent;
 }
@@ -402,10 +400,10 @@ p {
   text-decoration: none;
   color: #ffffff;
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
   text-decoration: none;
   -webkit-box-shadow: 0 3px 20px -8px #000;
-          box-shadow: 0 3px 20px -8px #000;
+  box-shadow: 0 3px 20px -8px #000;
 }
 
 .section {
@@ -460,7 +458,6 @@ p {
   font-size: 20px;
 }
 
-
 /* ==========
 	4. Home
    ========== */
@@ -488,7 +485,7 @@ p {
 }
 
 .home-1-bg {
-  background-image: url("../images/home-1-bg.png");
+  background-image: url('../images/home-1-bg.png');
   position: relative;
   background-size: cover;
   height: 100vh;
@@ -508,7 +505,7 @@ p {
 }
 
 .home-2-bg {
-  background-image: url("../images/home-2-bg.png");
+  background-image: url('../images/home-2-bg.png');
   background-color: #0e6cff;
   position: relative;
   background-size: cover;
@@ -563,8 +560,8 @@ p {
 }
 
 .home-3-bg {
-  background-image: url("../images/home-3-bg.png");
-  background-color: #005bea;
+  background-image: url('../images/home-3-bg.png');
+  background-color: #0047ab;
   position: relative;
   background-size: cover;
   height: 100vh;
@@ -579,7 +576,7 @@ p {
 }
 
 .play-icon-circle {
-  background: #ff8700;
+  background: #d29501;
   height: 46px;
   width: 46px;
   line-height: 46px;
@@ -594,7 +591,7 @@ p {
 }
 
 .home-4-bg {
-  background-image: url("../images/home-4-bg.jpg");
+  background-image: url('../images/home-4-bg.jpg');
   position: relative;
   background-size: cover;
   height: 100vh;
@@ -612,7 +609,7 @@ p {
   border-radius: 4px;
   outline: none !important;
   -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .video-button {
@@ -624,7 +621,7 @@ p {
   text-align: center;
   bottom: 50%;
   -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  transform: translateY(50%);
 }
 
 .video-button .play-icon-circle {
@@ -637,11 +634,11 @@ p {
   display: inline-block;
   font-size: 30px;
   -webkit-box-shadow: 0 0 0 9px rgba(255, 255, 255, 0.15);
-          box-shadow: 0 0 0 9px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 9px rgba(255, 255, 255, 0.15);
 }
 
 .video-button .play-icon-circle:after {
-  content: "";
+  content: '';
   background: rgba(255, 255, 255, 0.1);
   height: 106px;
   width: 106px;
@@ -652,11 +649,11 @@ p {
   margin: 0 auto;
   bottom: 50%;
   -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  transform: translateY(50%);
 }
 
 .home-5-bg {
-  background-image: url("../images/home-5-bg.jpg");
+  background-image: url('../images/home-5-bg.jpg');
   position: relative;
   background-size: cover;
   height: 100vh;
@@ -669,7 +666,7 @@ p {
 }
 
 .home-6-bg {
-  background-image: linear-gradient(45deg, #005bea 0%, #039bea 100%);
+  background-image: linear-gradient(45deg, #0047ab 0%, #039bea 100%);
   position: relative;
   background-size: cover;
   height: 100vh;
@@ -677,7 +674,7 @@ p {
 }
 
 .home-6-content {
-  background-image: url("../images/home-6-img-bg.png");
+  background-image: url('../images/home-6-img-bg.png');
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -737,19 +734,19 @@ p {
 }
 
 .bg-about {
-  background-image: url("../images/bg-about.png");
-  background-color: #005bea;
+  background-image: url('../images/bg-about.png');
+  background-color: #0047ab;
   position: relative;
   background-size: cover;
   background-position: center center;
 }
 
 .bg-about.bg-light-about {
-  background-image: url("../images/bg-light-about.png");
+  background-image: url('../images/bg-light-about.png');
 }
 
 .title-border-color:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 120px;
   height: 2px;
@@ -761,17 +758,16 @@ p {
 }
 
 .title-border-color:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 6px;
-  background-color: #ff8700;
+  background-color: #d29501;
   top: 13px;
   left: 0px;
   right: 0;
   border-radius: 50px;
 }
-
 
 /* ==========
 	5. About
@@ -813,10 +809,10 @@ p {
 }
 
 .about-box.about-light:hover .about-icon {
-  background-color: #005bea;
+  background-color: #0047ab;
   -webkit-box-shadow: 0 0 0 7px rgba(0, 91, 234, 0.15);
-          box-shadow: 0 0 0 7px rgba(0, 91, 234, 0.15);
-  border-color: #005bea;
+  box-shadow: 0 0 0 7px rgba(0, 91, 234, 0.15);
+  border-color: #0047ab;
 }
 
 .about-box.about-light:hover i {
@@ -846,22 +842,22 @@ p {
 .about-box:hover .about-icon {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.15);
-          box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.15);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .about-box:hover i {
-  -webkit-text-stroke: 1px #005bea;
+  -webkit-text-stroke: 1px #0047ab;
   -webkit-text-fill-color: transparent;
 }
 
 .title-border-simple:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 120px;
   height: 2px;
-  background-color: #005bea;
+  background-color: #0047ab;
   top: 15px;
   right: 0;
   left: 0;
@@ -869,11 +865,11 @@ p {
 }
 
 .title-border-simple:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 6px;
-  background-color: #ff8700;
+  background-color: #d29501;
   top: 13px;
   left: 0px;
   right: 0;
@@ -903,25 +899,25 @@ p {
 
 .service-box .service-icon i {
   font-size: 28px;
-  color: #005bea;
+  color: #0047ab;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .service-box:hover {
   -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  transform: scale(1.01);
   border-color: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .service-box:hover .service-icon {
-  background-color: #005bea;
+  background-color: #0047ab;
   -webkit-box-shadow: 0 0 0 7px rgba(0, 91, 234, 0.15);
-          box-shadow: 0 0 0 7px rgba(0, 91, 234, 0.15);
+  box-shadow: 0 0 0 7px rgba(0, 91, 234, 0.15);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -933,7 +929,7 @@ p {
 }
 
 .service-box:hover .service-title a {
-  color: #005bea !important;
+  color: #0047ab !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -954,32 +950,32 @@ p {
 }
 
 .features-img {
-  background-image: url("../images/features-bg-effect.png");
+  background-image: url('../images/features-bg-effect.png');
   position: relative;
   background-size: cover;
   background-position: center center;
 }
 
 .features-img:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
   height: 360px;
   width: 360px;
-  background-color: #005bea;
+  background-color: #0047ab;
   margin: 0 auto;
   border-radius: 50%;
   bottom: 50%;
   -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  transform: translateY(50%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .features-img:hover:after {
   -webkit-box-shadow: 0 0 0px 10px rgba(0, 91, 234, 0.1);
-          box-shadow: 0 0 0px 10px rgba(0, 91, 234, 0.1);
+  box-shadow: 0 0 0px 10px rgba(0, 91, 234, 0.1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -993,11 +989,10 @@ p {
 
 .features-img img:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 
 /* ==========
 	8. Pricing
@@ -1030,7 +1025,7 @@ p {
 }
 
 .pricing-box .price:after {
-  content: "";
+  content: '';
   background-color: #f8f9fa;
   height: 20px;
   width: 20px;
@@ -1051,31 +1046,35 @@ p {
   margin: 20px 0px;
 }
 
-.pricing-box:hover, .pricing-box.active {
+.pricing-box:hover,
+.pricing-box.active {
   -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  transform: scale(1.03);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.pricing-box:hover .price, .pricing-box.active .price {
-  background-color: #005bea !important;
+.pricing-box:hover .price,
+.pricing-box.active .price {
+  background-color: #0047ab !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  border-color: #005bea;
+  border-color: #0047ab;
 }
 
-.pricing-box:hover .price:after, .pricing-box.active .price:after {
-  background-color: #005bea !important;
+.pricing-box:hover .price:after,
+.pricing-box.active .price:after {
+  background-color: #0047ab !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  border-color: #005bea;
+  border-color: #0047ab;
 }
 
 .pricing-box:hover .price h2,
-.pricing-box:hover .price h5, .pricing-box.active .price h2,
+.pricing-box:hover .price h5,
+.pricing-box.active .price h2,
 .pricing-box.active .price h5 {
   color: #ffffff !important;
   -webkit-transition: all 0.5s;
@@ -1083,7 +1082,7 @@ p {
 }
 
 .bg-clients {
-  background-image: url("../images/bg-clients.jpg");
+  background-image: url('../images/bg-clients.jpg');
   background-size: cover;
   position: relative;
   background-attachment: fixed;
@@ -1093,7 +1092,6 @@ p {
   margin: 15px;
 }
 
-
 /* ==========
 	9. Testimonials
    ========== */
@@ -1102,8 +1100,16 @@ p {
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 4px;
   padding: 40px 34px 65px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 91% 88%, 92% 100%, 87% 88%, 0 88%);
-          clip-path: polygon(0 0, 100% 0, 100% 88%, 91% 88%, 92% 100%, 87% 88%, 0 88%);
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 88%,
+    91% 88%,
+    92% 100%,
+    87% 88%,
+    0 88%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 91% 88%, 92% 100%, 87% 88%, 0 88%);
 }
 
 .testi-content .testi-box .quote-img img {
@@ -1119,7 +1125,7 @@ p {
 
 .testi-content .clients-name .after-border {
   position: absolute;
-  border-bottom: 1px solid #ff8700;
+  border-bottom: 1px solid #d29501;
   height: 1px;
   width: 40px;
   margin-left: -50px;
@@ -1134,14 +1140,13 @@ p {
   width: 8px;
   height: 4px;
   margin: 5px 7px;
-  background: #ff8700;
+  background: #d29501;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
   width: 13px;
 }
-
 
 /* ==========
 	10. Blog
@@ -1152,7 +1157,7 @@ p {
   right: 0;
   margin: 0 18px;
   -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   top: -25px;
   -webkit-transition: all 0.5s;
@@ -1161,9 +1166,9 @@ p {
 
 .blog .blog-content:hover {
   -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
   -webkit-box-shadow: 0 0 13px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 13px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 13px 0px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -1188,7 +1193,7 @@ p {
 }
 
 .blog .blog-date {
-  background-color: #005bea;
+  background-color: #0047ab;
   position: absolute;
   padding: 2px 12px;
   border-radius: 4px;
@@ -1198,21 +1203,20 @@ p {
   letter-spacing: 0.8px;
 }
 
-
 /* ==========
 	11. Contact Us
    ========== */
 
 .contact-box {
   -webkit-box-shadow: 0 0 16px 1px rgba(41, 41, 41, 0.08);
-          box-shadow: 0 0 16px 1px rgba(41, 41, 41, 0.08);
+  box-shadow: 0 0 16px 1px rgba(41, 41, 41, 0.08);
 }
 
 .contact-box .form-control:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: #f6f6f6;
-  border-color: #f3f3f3 #f3f3f3 #ff8700;
+  border-color: #f3f3f3 #f3f3f3 #d29501;
 }
 
 .contact-box .form-control {
@@ -1255,7 +1259,7 @@ p {
 }
 
 .contact-box .follow-icon li a:hover {
-  background-color: #ff8700;
+  background-color: #d29501;
   color: #ffffff !important;
   height: 38px;
   width: 38px;
@@ -1265,7 +1269,7 @@ p {
   text-align: center;
   border-radius: 50px;
   -webkit-box-shadow: 0 0 0 6px rgba(255, 135, 0, 0.15);
-          box-shadow: 0 0 0 6px rgba(255, 135, 0, 0.15);
+  box-shadow: 0 0 0 6px rgba(255, 135, 0, 0.15);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -1312,13 +1316,12 @@ p {
   overflow: hidden;
 }
 
-
 /* ==========
 	12. Footer
    ========== */
 
 .footer-bg {
-  background-image: url("../images/footer-bg.png");
+  background-image: url('../images/footer-bg.png');
   background-size: cover;
   background-position: center center;
   padding-top: 80px;
@@ -1337,8 +1340,8 @@ p {
 }
 
 .footer-sub-menu li a:after {
-  content: "";
-  background-color: #ff8700;
+  content: '';
+  background-color: #d29501;
   height: 1px;
   width: 0%;
   position: absolute;
@@ -1349,7 +1352,7 @@ p {
 }
 
 .footer-sub-menu li a:hover {
-  color: #ff8700 !important;
+  color: #d29501 !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -1399,7 +1402,6 @@ p {
   }
 }
 
-
 /* ==========
 	13. Preloader
    ========== */
@@ -1410,7 +1412,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(45deg, #00c6fb, #005bea);
+  background-image: linear-gradient(45deg, #00c6fb, #0047ab);
   z-index: 9999999;
 }
 
@@ -1483,7 +1485,9 @@ p {
 }
 
 @-webkit-keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
+  0%,
+  70%,
+  100% {
     -webkit-transform: scale3D(1, 1, 1);
     transform: scale3D(1, 1, 1);
   }
@@ -1494,7 +1498,9 @@ p {
 }
 
 @keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
+  0%,
+  70%,
+  100% {
     -webkit-transform: scale3D(1, 1, 1);
     transform: scale3D(1, 1, 1);
   }
