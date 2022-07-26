@@ -111,9 +111,11 @@
             <li class="nav-item">
               <a href="#pricing" class="nav-link">Precios</a>
             </li>
+            <!-- comment out section CLIENTS 
             <li class="nav-item">
               <a href="#clients" class="nav-link">Clientes</a>
             </li>
+            -->
             <li class="nav-item">
               <a href="#blog" class="nav-link">Blog</a>
             </li>
@@ -1071,8 +1073,8 @@
                     <form
                       method="POST"
                       action="https://formspree.io/f/xgedgbpj"
-                      name="contact-form"
-                      id="contact-form"
+                      name="contactform"
+                      id="contactform"
                     >
                       <div class="row">
                         <div class="col-lg-6">
@@ -1332,9 +1334,12 @@
 
     <!-- Contact Form feedback after submission -->
     <script>
-      document.getElementById('contact-form').addEventListener('submit', function () {
+      document.getElementById('contactform').addEventListener('submit', function () {
       alert("Gracias por ponerte en contacto con nosotros. Hemos recibido tu mensaje :)");
       }, false);
+
+      // document.getElementById('contact-form').reset();
+      // $('#contactform')[0].reset();
     </script>
   </body>
 </html>
