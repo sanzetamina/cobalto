@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf7f2;
+  --foreground: #1b1a17;
+
+  --color-cobalto-amber: #e29700;
+  --color-cobalto-amber-dark: #b97a00;
+  --color-cobalto-ink: #17181b;
+  --color-cobalto-ink-soft: #24262b;
+  --color-cobalto-cream: #faf7f2;
+  --color-cobalto-stone: #6b6459;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cobalto-amber: var(--color-cobalto-amber);
+  --color-cobalto-amber-dark: var(--color-cobalto-amber-dark);
+  --color-cobalto-ink: var(--color-cobalto-ink);
+  --color-cobalto-ink-soft: var(--color-cobalto-ink-soft);
+  --color-cobalto-cream: var(--color-cobalto-cream);
+  --color-cobalto-stone: var(--color-cobalto-stone);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-fraunces);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-kenburns {
+  animation: kenburns 18s ease-in-out infinite alternate;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-kenburns,
+  .animate-fade-up {
+    animation: none;
+  }
+}
