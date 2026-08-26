@@ -78,6 +78,10 @@ export const projects: Project[] = [
       es: "Residencia de nueva construcción con cocina de líneas cálidas y una terraza de arcos de piedra pensada para vivir puertas afuera todo el año. Proyecto de Cobalto.",
       en: "A newly built residence with a warm, natural-material kitchen and a stone-arched terrace designed for year-round outdoor living. A project by Cobalto.",
     },
+    story: {
+      es: "Cada espacio se pensó para maximizar la luz natural y la conexión con el exterior, desde la cocina hasta la terraza de arcos. En Cobalto acompañamos el proceso completo — cimentación, diseño arquitectónico con metodología BIM y acabados — para entregar una vivienda lista para habitarse.",
+      en: "Every space was designed to maximize natural light and a connection to the outdoors, from the kitchen to the arched terrace. At Cobalto we managed the full process — foundation, BIM-based architectural design, and finishes — to deliver a move-in-ready home.",
+    },
     seoTitle: {
       es: "Casa Santiago — Construcción residencial en Yucatán | Cobalto",
       en: "Casa Santiago — New Residential Construction in Yucatán | Cobalto",
@@ -96,6 +100,10 @@ export const projects: Project[] = [
     description: {
       es: "Conjunto de villas de renta vacacional con alberca compartida, fachadas de color y acabados pensados para huéspedes exigentes. Proyecto de Cobalto en Yucatán.",
       en: "A vacation-rental villa complex with a shared pool, colorful façades, and finishes built for discerning guests. A project by Cobalto in Yucatán, Mexico.",
+    },
+    story: {
+      es: "El conjunto combina varias unidades independientes con alberca y áreas comunes compartidas, pensadas para maximizar la ocupación en temporada alta. Cobalto se encargó de la construcción y sigue dando mantenimiento preventivo, cuidando tanto la imagen del desarrollo como su operación día a día.",
+      en: "The complex combines several independent units with a shared pool and common areas, designed to maximize occupancy during peak season. Cobalto handled the construction and continues to provide preventive maintenance, looking after both the property's image and its day-to-day operation.",
     },
     seoTitle: {
       es: "Villas Chablé — Townhouses en renta vacacional, Yucatán | Cobalto",
@@ -116,6 +124,10 @@ export const projects: Project[] = [
       es: "Remodelación de estilo bohemio con techos de vigas expuestas, luz natural y baños integrados en un lenguaje cálido y minimalista. Restauración de Cobalto.",
       en: "A bohemian-style renovation with exposed-beam ceilings, natural light, and en-suite bathrooms in a warm, minimalist language. A renovation by Cobalto.",
     },
+    story: {
+      es: "La intervención respetó la estructura original de la casa, abriendo los espacios interiores hacia el jardín y sustituyendo acabados desgastados por materiales cálidos y duraderos. El resultado es una vivienda que conserva su carácter mientras responde a las necesidades de vida actuales.",
+      en: "The renovation respected the home's original structure, opening the interior spaces toward the garden and replacing worn finishes with warm, durable materials. The result is a home that keeps its character while meeting present-day living needs.",
+    },
     seoTitle: {
       es: "Villa Bohá — Remodelación de estilo bohemio en Yucatán | Cobalto",
       en: "Villa Bohá — Bohemian-Style Renovation in Yucatán | Cobalto",
@@ -135,6 +147,10 @@ export const projects: Project[] = [
       es: "Restauración de una propiedad de época, con tina de baño independiente y una recámara de dosel que conserva todo su carácter original. Remodelación de Cobalto.",
       en: "The restoration of a period property, with a freestanding soaking tub and a canopy-bed suite that keeps all of its original character. A renovation by Cobalto.",
     },
+    story: {
+      es: "Como en gran parte de nuestro trabajo de restauración, el reto principal fue conservar los elementos originales de la propiedad — muros, alturas, proporciones — mientras se actualizaban instalaciones y acabados para el confort actual, sin perder el carácter que hace especiales a estas casas de época.",
+      en: "As with much of our restoration work, the main challenge was preserving the property's original elements — walls, ceiling heights, proportions — while updating fixtures and finishes for present-day comfort, without losing the character that makes these period homes special.",
+    },
     seoTitle: {
       es: "Casa Rosa — Restauración de una propiedad de época | Cobalto",
       en: "Casa Rosa — Restoration of a Historic Property | Cobalto",
@@ -153,6 +169,10 @@ export const projects: Project[] = [
     description: {
       es: "Nuevo desarrollo en Isla Holbox: cabañas de inspiración maya pensadas para el mercado de renta vacacional frente al Caribe. Proyecto de Cobalto en Quintana Roo.",
       en: "A new development on Isla Holbox: Maya-inspired cabins built for the vacation-rental market on the Caribbean coast. A project by Cobalto in Quintana Roo.",
+    },
+    story: {
+      es: "Isla Holbox impone condiciones particulares de construcción, desde la logística de materiales hasta el clima costero. El desarrollo se diseñó pensando en huéspedes de renta vacacional, con cabañas de inspiración maya que buscan integrarse al paisaje de la isla en lugar de competir con él.",
+      en: "Isla Holbox comes with particular construction conditions, from materials logistics to the coastal climate. The development was designed with vacation-rental guests in mind, with Maya-inspired cabins meant to blend into the island's landscape rather than compete with it.",
     },
     seoTitle: {
       es: "Shanti, Isla de Holbox — Desarrollo en Quintana Roo | Cobalto",

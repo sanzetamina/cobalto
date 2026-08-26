@@ -29,6 +29,9 @@ export const dictionary = {
       aboutProject: "Sobre este proyecto",
       servicesUsed: "Servicios utilizados",
       gallery: "Galería",
+      details: "Detalles del proyecto",
+      ctaTitle: "¿Tienes un proyecto en mente?",
+      ctaSubtitle: "Cuéntanos qué necesitas y te respondemos por WhatsApp.",
     },
     projectCategories: {
       construccion: "Construcción",
@@ -95,6 +98,9 @@ export const dictionary = {
       aboutProject: "About this project",
       servicesUsed: "Services used",
       gallery: "Gallery",
+      details: "Project details",
+      ctaTitle: "Have a project in mind?",
+      ctaSubtitle: "Tell us what you need and we'll get back to you on WhatsApp.",
     },
     projectCategories: {
       construccion: "Construction",

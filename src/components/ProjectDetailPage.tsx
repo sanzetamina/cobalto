@@ -58,6 +58,7 @@ export function ProjectDetailPage({ locale, project }: { locale: Locale; project
               <p className="mt-4 text-lg leading-relaxed text-cobalto-ink-soft">
                 {project.description[locale]}
               </p>
+              <p className="mt-4 leading-relaxed text-cobalto-stone">{project.story[locale]}</p>
 
               {project.serviceSlugs.length > 0 && (
                 <div className="mt-8">
@@ -82,28 +83,33 @@ export function ProjectDetailPage({ locale, project }: { locale: Locale; project
               )}
             </div>
 
-            <dl className="space-y-5 rounded-2xl border border-black/5 bg-white p-6 h-fit">
-              <div>
-                <dt className="text-xs font-semibold uppercase tracking-wide text-cobalto-stone">
-                  {copy.projects.location}
-                </dt>
-                <dd className="mt-1 font-medium">{project.location}</dd>
-              </div>
-              <div>
-                <dt className="text-xs font-semibold uppercase tracking-wide text-cobalto-stone">
-                  {copy.projects.year}
-                </dt>
-                <dd className="mt-1 font-medium">{project.year}</dd>
-              </div>
+            <div className="rounded-2xl border border-black/5 bg-white p-6 h-fit">
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-cobalto-stone">
+                {copy.projects.details}
+              </h3>
+              <dl className="mt-4 space-y-5">
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-cobalto-stone">
+                    {copy.projects.location}
+                  </dt>
+                  <dd className="mt-1 font-medium">{project.location}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-cobalto-stone">
+                    {copy.projects.year}
+                  </dt>
+                  <dd className="mt-1 font-medium">{project.year}</dd>
+                </div>
+              </dl>
               <WhatsAppLink
                 locale={locale}
                 source={`project-page:${project.slug}`}
                 message={projectInterestMessage(locale, project.title)}
-                className="block rounded-full bg-cobalto-amber px-5 py-2.5 text-center text-sm font-semibold text-cobalto-ink transition-colors hover:bg-cobalto-amber-dark"
+                className="mt-5 block rounded-full bg-cobalto-amber px-5 py-2.5 text-center text-sm font-semibold text-cobalto-ink transition-colors hover:bg-cobalto-amber-dark"
               >
                 {copy.contact.whatsapp}
               </WhatsAppLink>
-            </dl>
+            </div>
           </div>
 
           {gallery.length > 1 && (
@@ -128,14 +134,29 @@ export function ProjectDetailPage({ locale, project }: { locale: Locale; project
           )}
         </section>
 
-        <div className="mx-auto max-w-4xl px-6 pb-16">
+        <section className="mx-auto max-w-4xl px-6 pb-16">
+          <div className="rounded-3xl bg-cobalto-ink px-8 py-12 text-center text-white sm:px-16">
+            <h2 className="font-[family-name:var(--font-display)] text-2xl font-medium sm:text-3xl">
+              {copy.projects.ctaTitle}
+            </h2>
+            <p className="mt-3 text-white/70">{copy.projects.ctaSubtitle}</p>
+            <WhatsAppLink
+              locale={locale}
+              source={`project-page-cta:${project.slug}`}
+              message={projectInterestMessage(locale, project.title)}
+              className="mt-6 inline-block rounded-full bg-cobalto-amber px-7 py-3 text-sm font-semibold text-cobalto-ink transition-colors hover:bg-cobalto-amber-dark"
+            >
+              {copy.contact.whatsapp}
+            </WhatsAppLink>
+          </div>
+
           <Link
             href={`${homeBase}/#proyectos`}
-            className="text-sm font-medium text-cobalto-amber-dark hover:underline"
+            className="mt-8 inline-block text-sm font-medium text-cobalto-amber-dark hover:underline"
           >
             ← {copy.projects.back}
           </Link>
-        </div>
+        </section>
       </main>
       <Footer locale={locale} />
       <WhatsAppFloatingButton locale={locale} project={{ slug: project.slug, title: project.title }} />

@@ -22,6 +22,8 @@ export interface Project {
   coverImage: string | null;
   gallery: string[];
   description: LocaleString;
+  /** Second paragraph shown on the project detail page, below `description`. */
+  story: LocaleString;
   /** Longer, keyword-bearing title for <title>/OG — the visible `title` stays short for UI. */
   seoTitle: LocaleString;
   serviceSlugs: string[];
