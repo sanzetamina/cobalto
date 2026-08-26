@@ -2,7 +2,7 @@ import Image from "next/image";
 import type { Locale } from "@/lib/types";
 import { t } from "@/lib/i18n";
 import { townhousesInfo } from "@/lib/site-data";
-import { whatsappLink } from "@/lib/whatsapp";
+import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { Reveal } from "@/components/Reveal";
 
 export function Townhouses({ locale }: { locale: Locale }) {
@@ -36,19 +36,18 @@ export function Townhouses({ locale }: { locale: Locale }) {
             ))}
           </ul>
 
-          <a
-            href={whatsappLink(
-              locale,
+          <WhatsAppLink
+            locale={locale}
+            source="townhouses"
+            message={
               locale === "es"
-                ? "Hola, me interesan las townhouses en Chicxulub Puerto."
-                : "Hi, I'm interested in the Chicxulub Puerto townhouses.",
-            )}
-            target="_blank"
-            rel="noopener noreferrer"
+                ? "Hola, vi las townhouses en Chicxulub Puerto en su sitio web y me interesan."
+                : "Hi, I saw the Chicxulub Puerto townhouses on your website and I'm interested."
+            }
             className="mt-10 inline-block rounded-full bg-cobalto-amber px-7 py-3.5 text-sm font-semibold text-cobalto-ink transition-colors hover:bg-cobalto-amber-dark"
           >
             {copy.townhouses.cta}
-          </a>
+          </WhatsAppLink>
         </Reveal>
 
         <Reveal delay={150}>

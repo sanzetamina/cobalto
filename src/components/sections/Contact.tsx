@@ -1,7 +1,7 @@
 import type { Locale } from "@/lib/types";
 import { t } from "@/lib/i18n";
 import { siteSettings } from "@/lib/site-data";
-import { whatsappLink } from "@/lib/whatsapp";
+import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { Reveal } from "@/components/Reveal";
 
 export function Contact({ locale }: { locale: Locale }) {
@@ -16,14 +16,13 @@ export function Contact({ locale }: { locale: Locale }) {
           </h2>
           <p className="mt-4 text-white/70">{copy.contact.subtitle}</p>
 
-          <a
-            href={whatsappLink(locale)}
-            target="_blank"
-            rel="noopener noreferrer"
+          <WhatsAppLink
+            locale={locale}
+            source="contact-section"
             className="mt-8 inline-block rounded-full bg-cobalto-amber px-8 py-4 text-sm font-semibold text-cobalto-ink transition-colors hover:bg-cobalto-amber-dark"
           >
             {copy.contact.whatsapp}
-          </a>
+          </WhatsAppLink>
 
           <dl className="mx-auto mt-12 grid max-w-lg grid-cols-1 gap-6 text-left sm:grid-cols-2">
             <div>

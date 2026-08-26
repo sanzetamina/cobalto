@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ProjectDetailPage } from "@/components/ProjectDetailPage";
 import { getProjectBySlug, projects } from "@/lib/site-data";
+import { pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -15,10 +16,13 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = getProjectBySlug(slug);
   if (!project) return {};
-  return {
-    title: `${project.title} — Cobalto`,
+  return pageMetadata({
+    locale: "es",
+    paths: { es: `/proyectos/${slug}`, en: `/en/projects/${slug}` },
+    title: project.seoTitle.es,
     description: project.description.es,
-  };
+    image: project.coverImage,
+  });
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {

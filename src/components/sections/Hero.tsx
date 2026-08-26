@@ -2,7 +2,7 @@ import Image from "next/image";
 import type { Locale } from "@/lib/types";
 import { t } from "@/lib/i18n";
 import { siteSettings } from "@/lib/site-data";
-import { whatsappLink } from "@/lib/whatsapp";
+import { WhatsAppLink } from "@/components/WhatsAppLink";
 
 export function Hero({ locale }: { locale: Locale }) {
   const copy = t(locale);
@@ -13,7 +13,11 @@ export function Hero({ locale }: { locale: Locale }) {
       <div className="absolute inset-0">
         <Image
           src="/projects/villas-chable-1.jpg"
-          alt=""
+          alt={
+            locale === "es"
+              ? "Patio con arcos de piedra al atardecer, Villas Chablé"
+              : "Stone-arched courtyard at dusk, Villas Chablé"
+          }
           fill
           priority
           className="animate-kenburns object-cover opacity-50"
@@ -38,14 +42,13 @@ export function Hero({ locale }: { locale: Locale }) {
           className="animate-fade-up mt-10 flex flex-wrap gap-4"
           style={{ animationDelay: "260ms" }}
         >
-          <a
-            href={whatsappLink(locale)}
-            target="_blank"
-            rel="noopener noreferrer"
+          <WhatsAppLink
+            locale={locale}
+            source="hero"
             className="rounded-full bg-cobalto-amber px-7 py-3.5 text-sm font-semibold text-cobalto-ink transition-colors hover:bg-cobalto-amber-dark"
           >
             {copy.hero.cta}
-          </a>
+          </WhatsAppLink>
           <a
             href={`${base}/#proyectos`}
             className="rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:border-white/60"

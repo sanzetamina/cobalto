@@ -2,6 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
+  experimental: {
+    // Required because /es and /en each define their own root layout (different <html lang>).
+    globalNotFound: true,
+  },
   images: {
     unoptimized: true,
     remotePatterns: [

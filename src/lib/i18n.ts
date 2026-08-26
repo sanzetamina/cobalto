@@ -26,6 +26,9 @@ export const dictionary = {
       location: "Ubicación",
       year: "Año",
       category: "Categoría",
+      aboutProject: "Sobre este proyecto",
+      servicesUsed: "Servicios utilizados",
+      gallery: "Galería",
     },
     projectCategories: {
       construccion: "Construcción",
@@ -89,6 +92,9 @@ export const dictionary = {
       location: "Location",
       year: "Year",
       category: "Category",
+      aboutProject: "About this project",
+      servicesUsed: "Services used",
+      gallery: "Gallery",
     },
     projectCategories: {
       construccion: "Construction",

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/types";
 import { t } from "@/lib/i18n";
-import { whatsappLink } from "@/lib/whatsapp";
+import { WhatsAppLink } from "@/components/WhatsAppLink";
 
 export function Header({ locale }: { locale: Locale }) {
   const copy = t(locale);
@@ -46,14 +46,13 @@ export function Header({ locale }: { locale: Locale }) {
           >
             {copy.languageSwitch}
           </Link>
-          <a
-            href={whatsappLink(locale)}
-            target="_blank"
-            rel="noopener noreferrer"
+          <WhatsAppLink
+            locale={locale}
+            source="header"
             className="hidden rounded-full bg-cobalto-amber px-4 py-2 text-sm font-semibold text-cobalto-ink transition-colors hover:bg-cobalto-amber-dark sm:inline-block"
           >
             {copy.hero.cta}
-          </a>
+          </WhatsAppLink>
 
           <details className="group relative md:hidden">
             <summary className="flex h-9 w-9 cursor-pointer list-none items-center justify-center rounded-full border border-white/20 text-white/80 [&::-webkit-details-marker]:hidden">

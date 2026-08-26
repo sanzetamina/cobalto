@@ -3,10 +3,11 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloatingButton } from "@/components/WhatsAppFloatingButton";
+import { WhatsAppLink } from "@/components/WhatsAppLink";
 import type { Locale, Project } from "@/lib/types";
 import { t } from "@/lib/i18n";
 import { getServiceBySlug } from "@/lib/site-data";
-import { whatsappLink } from "@/lib/whatsapp";
+import { projectInterestMessage } from "@/lib/whatsapp";
 
 export function ProjectDetailPage({ locale, project }: { locale: Locale; project: Project }) {
   const copy = t(locale);
@@ -22,7 +23,7 @@ export function ProjectDetailPage({ locale, project }: { locale: Locale; project
             <div className="absolute inset-0">
               <Image
                 src={project.coverImage}
-                alt=""
+                alt={project.title}
                 fill
                 priority
                 className="object-cover opacity-35"
@@ -51,24 +52,32 @@ export function ProjectDetailPage({ locale, project }: { locale: Locale; project
         <section className="mx-auto max-w-4xl px-6 py-16">
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
             <div className="sm:col-span-2">
-              <p className="text-lg leading-relaxed text-cobalto-ink-soft">
+              <h2 className="font-[family-name:var(--font-display)] text-xl font-medium">
+                {copy.projects.aboutProject}
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-cobalto-ink-soft">
                 {project.description[locale]}
               </p>
 
               {project.serviceSlugs.length > 0 && (
-                <div className="mt-8 flex flex-wrap gap-2">
-                  {project.serviceSlugs.map((slug) => {
-                    const service = getServiceBySlug(slug);
-                    if (!service) return null;
-                    return (
-                      <span
-                        key={slug}
-                        className="rounded-full bg-cobalto-amber/10 px-4 py-1.5 text-sm font-medium text-cobalto-amber-dark"
-                      >
-                        {service.title[locale]}
-                      </span>
-                    );
-                  })}
+                <div className="mt-8">
+                  <h3 className="text-xs font-semibold uppercase tracking-wide text-cobalto-stone">
+                    {copy.projects.servicesUsed}
+                  </h3>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {project.serviceSlugs.map((slug) => {
+                      const service = getServiceBySlug(slug);
+                      if (!service) return null;
+                      return (
+                        <span
+                          key={slug}
+                          className="rounded-full bg-cobalto-amber/10 px-4 py-1.5 text-sm font-medium text-cobalto-amber-dark"
+                        >
+                          {service.title[locale]}
+                        </span>
+                      );
+                    })}
+                  </div>
                 </div>
               )}
             </div>
@@ -86,29 +95,35 @@ export function ProjectDetailPage({ locale, project }: { locale: Locale; project
                 </dt>
                 <dd className="mt-1 font-medium">{project.year}</dd>
               </div>
-              <a
-                href={whatsappLink(
-                  locale,
-                  locale === "es"
-                    ? `Hola, me interesa el proyecto "${project.title}".`
-                    : `Hi, I'm interested in the "${project.title}" project.`,
-                )}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
+                locale={locale}
+                source={`project-page:${project.slug}`}
+                message={projectInterestMessage(locale, project.title)}
                 className="block rounded-full bg-cobalto-amber px-5 py-2.5 text-center text-sm font-semibold text-cobalto-ink transition-colors hover:bg-cobalto-amber-dark"
               >
                 {copy.contact.whatsapp}
-              </a>
+              </WhatsAppLink>
             </dl>
           </div>
 
           {gallery.length > 1 && (
-            <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {gallery.map((src) => (
-                <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-                  <Image src={src} alt={project.title} fill className="object-cover" sizes="50vw" />
-                </div>
-              ))}
+            <div className="mt-16">
+              <h2 className="font-[family-name:var(--font-display)] text-xl font-medium">
+                {copy.projects.gallery}
+              </h2>
+              <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {gallery.map((src, i) => (
+                  <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                    <Image
+                      src={src}
+                      alt={`${project.title} — ${locale === "es" ? "foto" : "photo"} ${i + 1}`}
+                      fill
+                      className="object-cover"
+                      sizes="50vw"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           )}
         </section>
@@ -123,7 +138,7 @@ export function ProjectDetailPage({ locale, project }: { locale: Locale; project
         </div>
       </main>
       <Footer locale={locale} />
-      <WhatsAppFloatingButton locale={locale} />
+      <WhatsAppFloatingButton locale={locale} project={{ slug: project.slug, title: project.title }} />
     </>
   );
 }

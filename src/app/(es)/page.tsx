@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloatingButton } from "@/components/WhatsAppFloatingButton";
@@ -8,6 +9,16 @@ import { VideoShowcase } from "@/components/sections/VideoShowcase";
 import { About } from "@/components/sections/About";
 import { Townhouses } from "@/components/sections/Townhouses";
 import { Contact } from "@/components/sections/Contact";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata({
+  locale: "es",
+  paths: { es: "/", en: "/en" },
+  title: "Cobalto — Arquitectura y Construcción | Mérida, Yucatán",
+  description:
+    "Cobalto, Arquitectura y Construcción — proyectos de construcción, remodelación, diseño arquitectónico y mantenimiento en Mérida, Yucatán. Escríbenos por WhatsApp.",
+  image: "/projects/villas-chable-1.jpg",
+});
 
 export default function Home() {
   const locale = "es" as const;

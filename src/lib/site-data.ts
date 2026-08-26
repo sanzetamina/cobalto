@@ -75,8 +75,12 @@ export const projects: Project[] = [
     coverImage: "/projects/casa-santiago-1.jpg",
     gallery: ["/projects/casa-santiago-1.jpg", "/projects/casa-santiago-2.jpg"],
     description: {
-      es: "Residencia de nueva construcción con cocina de líneas cálidas y una terraza de arcos de piedra pensada para vivir puertas afuera todo el año.",
-      en: "A newly built residence with a warm, natural-material kitchen and a stone-arched terrace designed for year-round outdoor living.",
+      es: "Residencia de nueva construcción con cocina de líneas cálidas y una terraza de arcos de piedra pensada para vivir puertas afuera todo el año. Proyecto de Cobalto.",
+      en: "A newly built residence with a warm, natural-material kitchen and a stone-arched terrace designed for year-round outdoor living. A project by Cobalto.",
+    },
+    seoTitle: {
+      es: "Casa Santiago — Construcción residencial en Yucatán | Cobalto",
+      en: "Casa Santiago — New Residential Construction in Yucatán | Cobalto",
     },
     serviceSlugs: ["construccion", "diseno-bim"],
     featured: true,
@@ -90,8 +94,12 @@ export const projects: Project[] = [
     coverImage: "/projects/villas-chable-1.jpg",
     gallery: ["/projects/villas-chable-1.jpg", "/projects/villas-chable-2.jpg"],
     description: {
-      es: "Conjunto de villas de renta vacacional con alberca compartida, fachadas de color y acabados pensados para huéspedes exigentes.",
-      en: "A vacation-rental villa complex with a shared pool, colorful façades, and finishes built for discerning guests.",
+      es: "Conjunto de villas de renta vacacional con alberca compartida, fachadas de color y acabados pensados para huéspedes exigentes. Proyecto de Cobalto en Yucatán.",
+      en: "A vacation-rental villa complex with a shared pool, colorful façades, and finishes built for discerning guests. A project by Cobalto in Yucatán, Mexico.",
+    },
+    seoTitle: {
+      es: "Villas Chablé — Townhouses en renta vacacional, Yucatán | Cobalto",
+      en: "Villas Chablé — Vacation-Rental Townhouses in Yucatán | Cobalto",
     },
     serviceSlugs: ["construccion", "mantenimiento"],
     featured: true,
@@ -105,8 +113,12 @@ export const projects: Project[] = [
     coverImage: "/projects/villa-boha-1.jpg",
     gallery: ["/projects/villa-boha-1.jpg", "/projects/villa-boha-2.jpg"],
     description: {
-      es: "Remodelación de estilo bohemio con techos de vigas expuestas, luz natural y baños integrados en un lenguaje cálido y minimalista.",
-      en: "A bohemian-style renovation with exposed-beam ceilings, natural light, and en-suite bathrooms in a warm, minimalist language.",
+      es: "Remodelación de estilo bohemio con techos de vigas expuestas, luz natural y baños integrados en un lenguaje cálido y minimalista. Restauración de Cobalto.",
+      en: "A bohemian-style renovation with exposed-beam ceilings, natural light, and en-suite bathrooms in a warm, minimalist language. A renovation by Cobalto.",
+    },
+    seoTitle: {
+      es: "Villa Bohá — Remodelación de estilo bohemio en Yucatán | Cobalto",
+      en: "Villa Bohá — Bohemian-Style Renovation in Yucatán | Cobalto",
     },
     serviceSlugs: ["remodelacion"],
     featured: true,
@@ -120,8 +132,12 @@ export const projects: Project[] = [
     coverImage: "/projects/casa-rosa-1.jpg",
     gallery: ["/projects/casa-rosa-1.jpg", "/projects/casa-rosa-2.jpg"],
     description: {
-      es: "Restauración de una propiedad de época, con tina de baño independiente y una recámara de dosel que conserva todo su carácter original.",
-      en: "The restoration of a period property, with a freestanding soaking tub and a canopy-bed suite that keeps all of its original character.",
+      es: "Restauración de una propiedad de época, con tina de baño independiente y una recámara de dosel que conserva todo su carácter original. Remodelación de Cobalto.",
+      en: "The restoration of a period property, with a freestanding soaking tub and a canopy-bed suite that keeps all of its original character. A renovation by Cobalto.",
+    },
+    seoTitle: {
+      es: "Casa Rosa — Restauración de una propiedad de época | Cobalto",
+      en: "Casa Rosa — Restoration of a Historic Property | Cobalto",
     },
     serviceSlugs: ["remodelacion"],
     featured: true,
@@ -135,8 +151,12 @@ export const projects: Project[] = [
     coverImage: "/projects/shanti-holbox-1.jpg",
     gallery: ["/projects/shanti-holbox-1.jpg"],
     description: {
-      es: "Nuevo desarrollo en Isla Holbox: cabañas de inspiración maya pensadas para el mercado de renta vacacional frente al Caribe.",
-      en: "A new development on Isla Holbox: Maya-inspired cabins built for the vacation-rental market on the Caribbean coast.",
+      es: "Nuevo desarrollo en Isla Holbox: cabañas de inspiración maya pensadas para el mercado de renta vacacional frente al Caribe. Proyecto de Cobalto en Quintana Roo.",
+      en: "A new development on Isla Holbox: Maya-inspired cabins built for the vacation-rental market on the Caribbean coast. A project by Cobalto in Quintana Roo.",
+    },
+    seoTitle: {
+      es: "Shanti, Isla de Holbox — Desarrollo en Quintana Roo | Cobalto",
+      en: "Shanti, Isla de Holbox — Development in Quintana Roo | Cobalto",
     },
     serviceSlugs: ["construccion"],
     featured: false,
